@@ -8,6 +8,11 @@
 ## Пример использования:
 
 Для работы проекта удобно использовать tmux, чтобы параллельно запустить оба компонента.
+
+```sh
+pip install -r requirements.txt
+```
+
 ```sh
 tmux new -s proxy_harvester
 python proxy_harvester.py --countries ALL --type SOCKS5 --ping 1000 --update 30
