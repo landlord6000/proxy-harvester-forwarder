@@ -19,3 +19,8 @@ tmux new -s proxy_forwarder
 python proxy_forwarder.py --countries FR --port 1080
 Ctrl + b, затем d
 ```
+
+Проверить прокси
+```
+curl --proxy socks5h://127.0.0.1:1080 https://api.ipify.org
+```
